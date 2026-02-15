@@ -18,7 +18,7 @@ My Contribution: Refactored the entire pipeline to operate with Monocular vision
 2. Advanced Sensor Fusion Module
 Original: Used a standard Kalman Filter (KF) for fusing visual and inertial data.
 
-My Contribution: Replaced the KF with a [Insert Your Fusion Method Here]. This new backend allows for tighter coupling of visual features and IMU readings, reducing drift in scenarios where linear filters typically fail.
+My Contribution: This new backend allows for tighter coupling of visual features and IMU readings, reducing drift in scenarios where linear filters typically fail.
 
 3. Confidence & Uncertainty Quantification
 New Feature: Added a dynamic Confidence Scale output.
@@ -38,7 +38,7 @@ Visual Encoder: Extracts high-level geometric features from the KITTI monocular 
 
 Inertial Encoder: Processes high-frequency IMU data.
 
-Fusion Layer: The custom [Insert Method] fuses these modalities to regress 6-DoF pose and velocity.
+Fusion Layer: This fuses these modalities to regress 6-DoF pose and velocity.
 
 Dataset & Augmentation
 We utilize the KITTI Odometry Benchmark. To prevent overfitting to "perfect" lighting conditions, we apply:
@@ -63,8 +63,6 @@ OpenCV
 
 NumPy / Pandas
 
-(Add specific libraries required by your new fusion method)
-
 📜 Acknowledgements
 This project is forked from the original DVIO repository. We thank the original authors for their foundational work.
 
@@ -74,11 +72,10 @@ KITTI Dataset Team
 
 Relevant Video Resource: For a broader understanding of deep learning approaches in this field, you might find this overview helpful: Deep Visual Inertial Odometry with Kalman Filter.
 
-This video is relevant as it discusses the foundational concepts of Deep VIO and Kalman Filtering, which provides context for why you chose to replace the standard KF with your advanced fusion approach.
-
 Youtube Overview: 
 <a href="https://youtu.be/T8hH6Q6KIrc?si=aMZP8SQk5q0PdzRC" target="_blank">
   <img src="https://github.com/ElliotHYLee/Deep_Visual_Inertial_Odometry/blob/docker/yt.png" alt="Alt Text">
 </a>
+
 
 
